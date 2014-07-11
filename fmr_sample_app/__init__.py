@@ -1,11 +1,10 @@
 from flask import Flask
-#from flask_metaroute import MetaRoute
-#from . import controllers
 
-def make_app(global_conf, **app_conf):
+
+def make_app(global_conf, debug = None, **app_conf):
     app = Flask(__name__)
-    app.config.update(app_conf)
 
-    #MetaRoute(app, controllers)
+    app.debug = debug.lower() == "true"
+    app.config.update(app_conf)
 
     return app.wsgi_app

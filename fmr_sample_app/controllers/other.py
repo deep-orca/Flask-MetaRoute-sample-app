@@ -2,7 +2,6 @@ from flask.ext.metaroute import Controller, Route, Error
 from flask import abort
 
 
-
 class SomeCustomException(Exception):
     pass
 
