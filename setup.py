@@ -16,9 +16,8 @@ setup(
     url = 'https://github.com/deep-orca/Flask-MetaRoute-sample-app',
     install_requires = [
         "Flask",
-        "pastedeploy",
         "paste",
-        "Flask_MetaRoute"
+        "Flask-MetaRoute"
     ],
     packages = ['fmr_sample_app'],
     include_package_data = True,
@@ -26,6 +25,6 @@ setup(
     zip_safe = False,
     entry_points = """
     [paste.app_factory]
-    main = fmr_sample_app.app:make_app
+    main = fmr_sample_app:make_app
     """
 )
