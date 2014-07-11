@@ -2,7 +2,7 @@
 Flask-MetaRoute sample application
 -------------
 
-Flask-MetaRoute adds some useful decorators for routing
+Demo app for Flask-MetaRoute package
 """
 from setuptools import setup
 
@@ -13,7 +13,7 @@ setup(
     license='BSD',
     author='Orca',
     author_email='deep.orca@gmail.com',
-    url = '',
+    url = 'https://github.com/deep-orca/Flask-MetaRoute-sample-app',
     install_requires = [
         "Flask",
         "pastedeploy",
