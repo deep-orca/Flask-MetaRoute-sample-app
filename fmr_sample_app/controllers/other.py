@@ -54,7 +54,3 @@ class OtherController(object):
     @Error(SomeCustomException)
     def errSCE(self, ex = None):
         return "errSCE: " + repr(ex)
-
-    @Error(Exception)
-    def err(self, ex = None):
-        return "err: " + repr(ex)
